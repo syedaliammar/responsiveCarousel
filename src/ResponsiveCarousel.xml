@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="2020 mendix technology bv.responsivecarousel.ResponsiveCarousel" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Responsive Carousel</name>
+    <description>A responsive React based carousel</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="datasource" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="content" type="widgets" required="false" dataSource="datasource">
+                <caption>Content</caption>
+                <description>Widget using data source</description>
+            </property>
+            <property key="imageCaption" type="attribute" required="false" dataSource="datasource">
+                <caption>Image caption</caption>
+                <description>Image caption</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="isSwipeable" type="boolean" defaultValue="true">
+                <caption>Is Swipeable?</caption>
+                <description></description>
+            </property>
+            <property key="useKeyboard" type="boolean" defaultValue="false">
+                <caption>Use Keyboard?</caption>
+                <description>Use keyboard arrows to navigate</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
